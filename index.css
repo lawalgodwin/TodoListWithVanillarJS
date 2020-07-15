@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url();
+}
+
+.addTodo {
+  display: none;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.addTodo input[type="text"],
+.addTodo input[type="text"]:focus {
+  display: inline-block;
+  padding: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.container,
+.listContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.listContainer li {
+  margin-left: 10px;
+  height: 8%;
+  list-style-type: none;
+  padding: 10px;
+  color: white;
+  align-self: center;
+  background-color: tomato;
+}
+
+p {
+  padding-top: 2%;
+}
+header {
+  padding: 20px;
+  color: rgba(129, 126, 126, 0.849);
+}
+.add {
+  float: right;
+  background-color: green;
+  padding: 20px;
+}
+.edit {
+  background-color: gray;
+  padding: 10px;
+}
+.addTodo input[type="button"] {
+  background-color: red;
+  padding: 10px;
+}
+
+.add,
+.edit,
+.addTodo input[type="button"] {
+  color: white;
+  margin-top: 5%;
+  margin-right: 5%;
+  border-radius: 30px;
+  border: none;
+  position: sticky;
+  z-index: 30;
+}
+
+.delete {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  margin-right: 3px;
+  margin-top: 2px;
+  background-color: black;
+  border-radius: 2em;
+  color: rgb(72, 155, 123);
+  padding: 2.5px;
+  border: none;
+}
+.delete:hover {
+  transform: scaleX(1.2);
+}
