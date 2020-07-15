@@ -15,6 +15,8 @@ let todos = [];
 let todo = {};
 btnEdit.disabled = true;
 btnEdit.addEventListener("click", () => {
+  createListElement(myInput.value);
+
   console.log("edit presses");
 });
 
@@ -68,9 +70,6 @@ function createListElement(v) {
     createbutton.style.backgroundColor = "grey";
     btnEdit.disabled = false;
     btnEdit.style.backgroundColor = "red";
-    let newTtaskTextNode = document.createTextNode(`task: ${myInput.value}`);
-
-    listElement.replaceChild(newTtaskTextNode, taskTextNode);
   });
 
   listElement.appendChild(taskTextNode);
